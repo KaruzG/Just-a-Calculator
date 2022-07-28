@@ -1,0 +1,10 @@
+input, button {
+    width: 60px;
+    border: 1px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(187, 187, 187);
+}

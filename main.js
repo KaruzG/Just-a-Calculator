@@ -2,14 +2,19 @@
 //----------             KaruzG on GitHub             ----------|
 //--------------------------------------------------------------|
 
-console.log("main.js loaded!");
 
+
+//----------------------------var-------------------------------|
 var num1 = "";
 var num2 = "";
 var operator = null;
 var result = null;
 var secondNumberTrigger = false; // When a operator is clicked, this will set True, to num2 hold the second number.
+//--------------------------------------------------------------|
 
+
+
+//---------------------------funct------------------------------|
 function addChar(num){  // Funct when a number is clicked
     if (secondNumberTrigger == false) {
         num1 = num1 + num.toString();
@@ -45,7 +50,7 @@ function equal() {              // If = pressed, if there is no second number, t
         num2 = "0";
     }
 
-    function calculation(){     // Depending on the operator, will do the calculation
+    function calculation() {     // Depending on the operator, will do the calculation
         if (operator == "plus") {
             return parseInt(num1) + parseInt(num2);
         } else if (operator == "minus") {
@@ -61,3 +66,4 @@ function equal() {              // If = pressed, if there is no second number, t
     num2 = "";
     secondNumberTrigger = false;
 };
+//--------------------------------------------------------------|

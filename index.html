@@ -14,37 +14,30 @@
             <td colspan="4" id="result"><input id="resultInput" type="number"></td>
         </tr>
         <tr>
-            <td onclick="numberClicked()">7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>+</td>
+            <td onclick="addChar(7)">7</td>
+            <td onclick="addChar(8)">8</td>
+            <td onclick="addChar(9)">9</td>
+            <td onclick="addPlus()">+</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>-</td>
+            <td onclick="addChar(4)">4</td>
+            <td onclick="addChar(5)">5</td>
+            <td onclick="addChar(6)">6</td>
+            <td onclick="addMinus()">-</td>
         </tr>
         <tr>
-            <td>3</td>
-            <td>2</td>
-            <td>1</td>
-            <td>x</td>
+            <td onclick="addChar(3)">3</td>
+            <td onclick="addChar(2)">2</td>
+            <td onclick="addChar(1)">1</td>
+            <td onclick="addMultiply()">x</td>
         </tr>
         <tr>
-            <td>Remove</td>
-            <td>0</td>
-            <td>,</td>
-            <td>=</td>
+            <td onclick="remove()">Remove</td>
+            <td onclick="addChar(0)">0</td>
+            <td onclick="addFloat()">,</td>
+            <td onclick="equal()">=</td>
         </tr>
     </table>
 </body>
 <script src="./main.js"></script>
 </html>
-
-<!-- 
-    · Haz que no se pueda seleccionar los numeros
-    · Animacion de click en los numeros
-    · Numeros algo más oscuros
-    · Cambiar font
- -->

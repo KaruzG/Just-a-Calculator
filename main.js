@@ -15,8 +15,8 @@ var secondNumberTrigger = false; // When a operator is clicked, this will set Tr
 
 
 //---------------------------funct------------------------------|
-function addChar(num){  // Funct when a number is clicked
-    if (secondNumberTrigger == false) {
+function addChar(num){                                      // Funct when a number is clicked
+    if (secondNumberTrigger == false && result == null) {   //  · With no result because if before a calculation you use minus would make anything negative
         num1 = num1 + num.toString();
         document.getElementById("resultInput").value = num1;
     } else {
@@ -44,8 +44,8 @@ function addOperator(operatorChosen){
 
 function equal() {              // If = pressed, if there is no second number, the operation will be made with the new number and the old result.
     console.log(operator)       // If there is no second number either old result, will display the first number
-    if (num2 == "" && result != null) {
-        num2 = result;
+    if (num1 == "" && result != null) {
+        num1 = result;
     } else if (num2 == "" && result == null){
         num2 = "0";
     }
